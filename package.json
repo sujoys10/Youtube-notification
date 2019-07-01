@@ -15,6 +15,7 @@
   "dependencies": {
     "gatsby": "^2.10.0",
     "gatsby-source-youtube-v2": "^1.0.1",
+    "node-fetch": "^2.6.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
