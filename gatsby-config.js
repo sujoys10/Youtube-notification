@@ -11,7 +11,8 @@ module.exports = {
       resolve: `gatsby-source-youtube-v3`,
       options: {
         key: 'AIzaSyDPdlc3ctJ7yodRZE_GfbngNBEYbdcyys8',
-        channelId:'UCNFmBuclxQPe57orKiQbyfA',
+        channelId:'UCdM4pTNXElGNqBOZbvxmzjg',
+        //channelId:'UCNFmBuclxQPe57orKiQbyfA',
         //playlistId: 'PLzvhQUIpvvujXvcaIthycttSLChcP_rF2',
         part: 'snippet,contentDetails',
         maxResults: 25

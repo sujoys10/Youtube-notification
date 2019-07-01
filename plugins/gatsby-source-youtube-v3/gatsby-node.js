@@ -4,7 +4,7 @@ const queryString = require("query-string")
  module.exports.onCreateNode = ({node, actions}) => {
   const { createNode, createNodeField} = actions
   if(node.internal.type === "tubeVideo") {
-    console.log(JSON.stringify(node, undefined, 4));
+    //console.log(JSON.stringify(node, undefined, 4));
   }
   
 } 
@@ -62,6 +62,7 @@ module.exports.sourceNodes = async (
                 .then(res => res.json())
                 .then(data => {
                   data.items.map(video => {
+                    console.log(video.snippet.playlistId);
                     const nodeData = processContent(video);
                     createNode(nodeData);
                   })
@@ -73,59 +74,11 @@ module.exports.sourceNodes = async (
   )
 }
 
-  /*  */
+
   
-
-
+    
 
 
 
  
- /*  const res = await fetch(apiUrl);
-  const playlists = await res.json();
- // console.log(playlists)
-  const getPlaylistVideos = (data=[]) => {
-    playlists.items.forEach(playlist => {
-      let playlistApiOption = queryString.stringify({
-        part: 'snippet,contentDetails',
-        key: 'AIzaSyDPdlc3ctJ7yodRZE_GfbngNBEYbdcyys8',
-        playlistId: playlist.id,
-        fields: 'items(id,snippet(title,description,thumbnails),contentDetails)'
-      });
-      let playlistApiUrl = `https://www.googleapis.com/youtube/v3/playlistItems?${playlistApiOption}`;
-      fetch(playlistApiUrl)
-          .then(res => res.json())
-          .then(content => {
-            console.log(content.items)
-            content.items.forEach(item => {
-              data.push(item.snippet.title)
-              //console.log('push',data)
-            })
-            return data
-            console.log('Gn',data)
-          })
-    })
-    console.log('gn',data)
-    return data
-  }
-
-  const createNodes = async () => {
-    const data = await getPlaylistVideos();
-    console.log('cN',data);
-    data.forEach(item => {
-      if (item.id !== undefined) {
-        const nodeData = processContent(item)
-        console.log(nodeData);
-        createNode(nodeData)
-      }
-    })
-  }
-
-  function jk(){
-    createNodes(),
-    console.log('j');
-  }
-
-  return (
-    jk()
-   */
+ 
