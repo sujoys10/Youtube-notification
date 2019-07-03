@@ -10,11 +10,14 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "lambda-serve": "netlify-lambda serve functions",
+    "lambda-build":  "netlify-lambda build functions",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
     "gatsby": "^2.10.0",
     "gatsby-source-youtube-v2": "^1.0.1",
+    "netlify-lambda": "^1.4.13",
     "node-fetch": "^2.6.0",
     "query-string": "^6.8.1",
     "react": "^16.8.6",
