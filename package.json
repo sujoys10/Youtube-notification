@@ -12,6 +12,7 @@
     "serve": "gatsby serve",
     "lambda-serve": "netlify-lambda serve functions",
     "lambda-build":  "netlify-lambda build functions",
+    "prod": "npm run build; npm run lambda-build",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {

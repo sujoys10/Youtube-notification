@@ -7,7 +7,7 @@ import fetch from 'node-fetch';
         body: "Hello world"
         //body: JSON.stringify({msg: "hello"}) for post request
     })
-} */
+}  */
 
 exports.handler = async(event, context) => {
     //Only allow post
@@ -28,4 +28,4 @@ exports.handler = async(event, context) => {
         statusCode: 422,
         body: `Oops! ${err}`
     }))
-}
+} 
