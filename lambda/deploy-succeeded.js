@@ -1,4 +1,4 @@
-var pubsubhub = require("pubsubhubbub"),
+/* var pubsubhub = require("pubsubhubbub"),
     topic = "https://www.youtube.com/xml/feeds/videos.xml?channel_id=UCdM4pTNXElGNqBOZbvxmzjg",
     hub = "http://pubsubhubbub.appspot.com/";
 
@@ -50,3 +50,4 @@ pubsub.on("listen", () => {
 
 
 
+ */
