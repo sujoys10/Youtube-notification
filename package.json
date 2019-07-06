@@ -11,7 +11,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "lambda-serve": "netlify-lambda serve functions",
-    "lambda-build":  "netlify-lambda build functions",
+    "lambda-build": "netlify-lambda build functions",
     "prod": "npm run build; npm run lambda-build",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
@@ -20,6 +20,7 @@
     "gatsby-source-youtube-v2": "^1.0.1",
     "netlify-lambda": "^1.4.13",
     "node-fetch": "^2.6.0",
+    "pubsubhubbub": "^1.0.1",
     "query-string": "^6.8.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
