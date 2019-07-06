@@ -6,7 +6,7 @@ var pubsub = pubsubhub.createServer({
     callbackUrl: "https://hopeful-kepler-23eefa.netlify.com/.netlify/functions/newUpload"
 });
 
-pubsub.listen(1337);
+pubsub.listen(process.env.PORT);
 
 pubsub.on("subscribe", (data) => {
     console.log("Subscribe");
